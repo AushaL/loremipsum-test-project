@@ -114,10 +114,12 @@
               <div class="order__form-line">
                 <div class="order__range">
                   <div class="order__range-wrapper">
-                    <label for="range-type"
-                      >Sed ut perspiciatis, unde omnis iste natus</label
-                    >
-                    out
+                    <div class="order__range-columns">
+                      <label for="range-type"
+                        >Sed ut perspiciatis, unde omnis iste natus</label
+                      >
+                      <p class="order__range-output"><output></output>%</p>
+                    </div>
                   </div>
                   <input
                     type="range"
@@ -126,7 +128,6 @@
                     min="0"
                     max="100"
                   />
-                  <p class="order__range-output"><output></output>%</p>
                 </div>
                 <label for="input-file">Прикрепить файл</label>
                 <input
