@@ -683,6 +683,7 @@ img {
           column-gap: 38px;
 }
 
+.main-footer__links-list li,
 .main-footer__links-list a {
   display: -webkit-box;
   display: -ms-flexbox;
