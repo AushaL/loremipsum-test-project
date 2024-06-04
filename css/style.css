@@ -1,0 +1,57 @@
+@font-face {
+  font-weight: 400;
+  font-family: "Lato";
+  font-style: normal;
+  src: url("../fonts/Lato-Regular.woff2");
+  font-display: swap;
+}
+
+@font-face {
+  font-weight: 700;
+  font-family: "Lato";
+  font-style: normal;
+  src: url("../fonts/Lato-Bold.woff2");
+  font-display: swap;
+}
+
+@font-face {
+  font-weight: 900;
+  font-family: "Lato";
+  font-style: normal;
+  src: url("../fonts/Lato-Black.woff2");
+  font-display: swap;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Lato", "Arial", sans-serif;
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+input,
+textarea,
+button {
+  border: none;
+  outline: none;
+  background: transparent;
+}
+
+button {
+  cursor: pointer;
+}
+
+img {
+  max-width: 100%;
+}
