@@ -79,6 +79,40 @@ img {
   margin: 0 auto;
 }
 
+.button {
+  display: inline-block;
+  min-width: 183px;
+  padding: 15px 32px;
+  border-radius: 4px;
+  color: #fff;
+  background-color: #3e9cdc;
+  text-align: center;
+  font-size: 13px;
+  font-weight: 400;
+  line-height: 15.6px;
+  text-transform: uppercase;
+  border: 1px solid #fff;
+  transition: all 0.3s ease;
+}
+
+.button:hover {
+  background-color: #fff;
+  color: #3e9cdc;
+  border-color: #3e9cdc;
+}
+
+.button--secondary {
+  color: #2a2b30;
+  background-color: #fff;
+  border-color: #6f6d7b;
+}
+
+.button--secondary:hover {
+  color: #fff;
+  background-color: #6f6d7b;
+  border-color: #fff;
+}
+
 .main-header {
   position: fixed;
   width: 100%;
@@ -112,6 +146,72 @@ img {
   color: #43abf0;
 }
 
+.hero {
+  height: 100vh;
+  padding-top: 203px;
+  background-color: #fff;
+  background-image: url("../img/pictures/hero-bg.jpg");
+  background-repeat: no-repeat;
+  background-position: 0 0;
+}
+
+.hero__title {
+  margin-bottom: 80px;
+  font-size: 48px;
+  font-weight: 700;
+  line-height: 57.6px;
+  text-transform: uppercase;
+  color: #000;
+}
+
+.hero__title span {
+  color: #43abf0;
+}
+
+.hero__heading {
+  margin-bottom: 10px;
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 24px;
+  color: #000;
+}
+
+.hero__list {
+  display: flex;
+  flex-direction: column;
+  column-gap: 5px;
+}
+
+.hero__list li {
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 24px;
+  color: #000;
+}
+
+.hero__list li::before {
+  display: inline-block;
+  content: "-";
+  width: 25px;
+  height: 22px;
+  text-align: center;
+}
+
+.hero__buttons {
+  margin-top: 80px;
+  display: flex;
+  align-items: center;
+  column-gap: 30px;
+}
+
+@media (max-width: 1500px) {
+  .hero {
+    height: auto;
+    padding-bottom: 50px;
+    background-size: cover;
+  }
+}
+
 @media (max-width: 1200px) {
   .site-nav__list {
     column-gap: 40px;
@@ -126,6 +226,38 @@ img {
 
   .site-nav__list {
     column-gap: 20px;
+  }
+
+  .hero {
+    padding-top: 180px;
+  }
+
+  .hero__title {
+    font-size: 44px;
+    line-height: 53.6px;
+    margin-bottom: 40px;
+  }
+
+  .hero__buttons {
+    margin-top: 60px;
+  }
+}
+
+@media (max-width: 500px) {
+  .hero {
+    padding-top: 160px;
+  }
+
+  .hero__title {
+    font-size: 34px;
+    line-height: 45.6px;
+  }
+
+  .hero__buttons {
+    flex-direction: column;
+    row-gap: 10px;
+    align-items: center;
+    margin-top: 40px;
   }
 }
 

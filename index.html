@@ -4,6 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Lorem Ipsum Project</title>
+    <link rel="stylesheet" href="css/swiper.min.css" />
     <link rel="stylesheet" href="css/normalize.css" />
     <link rel="stylesheet" href="css/style.css" />
   </head>
@@ -40,7 +41,9 @@
       <section class="hero">
         <div class="container">
           <h2 class="hero__title">
-            Lorem ipsum dolor sit amet consectetur adipiscing
+            <span>Lorem ipsum</span> dolor sit<br />
+            amet consectetur
+            <span>adipiscing</span>
           </h2>
           <h3 class="hero__heading">
             At vero eos et accusamus et iusto odio dignissimos ducimus!
@@ -137,6 +140,37 @@
           </form>
         </div>
       </section>
+      <section class="testimonials">
+        <div class="container">
+          <h2 class="testimonials__title">Отзывы:</h2>
+          <div class="swiper">
+            <div class="swiper-wrapper">
+              <!-- Slides -->
+              <div class="swiper-slide">
+                <img src="" alt="" />
+                <p></p>
+              </div>
+              <div class="swiper-slide">
+                <img src="" alt="" />
+                <p></p>
+              </div>
+              <div class="swiper-slide">
+                <img src="" alt="" />
+                <p></p>
+              </div>
+            </div>
+            <!-- If we need pagination -->
+            <div class="swiper-pagination"></div>
+
+            <!-- If we need navigation buttons -->
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-button-next"></div>
+
+            <!-- If we need scrollbar
+            <div class="swiper-scrollbar"></div> -->
+          </div>
+        </div>
+      </section>
     </main>
     <footer class="main-footer">
       <div class="container">
@@ -210,6 +244,7 @@
         </div>
       </div>
     </footer>
+    <script src="js/swiper.min.js"></script>
     <script src="js/script.js"></script>
   </body>
 </html>
