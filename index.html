@@ -8,9 +8,184 @@
     <link rel="stylesheet" href="css/style.css" />
   </head>
   <body>
-    <header></header>
-    <main></main>
-    <footer></footer>
+    <header class="main-header">
+      <div class="container">
+        <nav class="site-nav">
+          <img
+            src="img/icons/main-logo.png"
+            width="247"
+            height="35"
+            alt="Lorem ipsum"
+          />
+          <ul class="site-nav__list">
+            <li>
+              <a href="#">Бизнес</a>
+            </li>
+            <li>
+              <a href="#">О нас</a>
+            </li>
+            <li>
+              <a href="#">Цены</a>
+            </li>
+            <li>
+              <a href="#">Оформить заказ</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+    <main>
+      <h1 class="visually-hidden">Сайт LoremIpsum.Net</h1>
+      <section class="hero">
+        <div class="container">
+          <h2 class="hero__title">
+            Lorem ipsum dolor sit amet consectetur adipiscing
+          </h2>
+          <h3 class="hero__heading">
+            At vero eos et accusamus et iusto odio dignissimos ducimus!
+          </h3>
+          <ul class="hero__list">
+            <li>Totam rem aperiam eaque ipsa</li>
+            <li>Sit voluptatem accusantium doloremque laudantium</li>
+            <li>Sed ut perspiciatis, unde omnis iste natus error</li>
+          </ul>
+          <div class="hero__buttons">
+            <a class="button" href="#">Заказать</a>
+            <a class="button button--secondary" href="#">Подробнее</a>
+          </div>
+        </div>
+      </section>
+      <section class="order">
+        <div class="container">
+          <h2 class="order__title">Оформление <span>Заказа</span></h2>
+          <p class="order__description">
+            Перед заполнением формы ознакомьтесь с нашей схемой работы!
+          </p>
+          <div class="order__process-line"></div>
+          <form class="order__form" action="post">
+            <div class="order__wrapper">
+              <div class="order__form-line">
+                <select class="input" name="system-type">
+                  <option value="type-0">Выберите тип системы</option>
+                  <option value="type-1">Type 1</option>
+                  <option value="type-2">Type 2</option>
+                  <option value="type-3">Type 3</option>
+                </select>
+                <input
+                  class="input"
+                  type="email"
+                  name="email"
+                  placeholder="Ваш e-mail"
+                />
+                <input
+                  class="input"
+                  type="text"
+                  name="name"
+                  placeholder="Ваше имя"
+                />
+              </div>
+              <div class="order__form-line">
+                <div class="order__range">
+                  <div class="order__range-wrapper">
+                    <label for="range-type"
+                      >Sed ut perspiciatis, unde omnis iste natus</label
+                    >
+                    out
+                  </div>
+                  <input
+                    type="range"
+                    id="range-type"
+                    name="range-type"
+                    min="0"
+                    max="100"
+                  />
+                  <p class="order__range-output"><output></output>%</p>
+                </div>
+                <label for="input-file">Прикрепить файл</label>
+                <input
+                  class="button order__file-button"
+                  type="file"
+                  id="input-file"
+                />
+              </div>
+            </div>
+            <button class="button" type="submit">Отправить</button>
+          </form>
+        </div>
+      </section>
+    </main>
+    <footer class="main-footer">
+      <div class="container">
+        <div class="main-footer__wrapper">
+          <div class="main-footer__column main-footer__column--left">
+            <p>© 2018 «LoremIpsum.net» Все права защищены.</p>
+          </div>
+          <div class="main-footer__column main-footer__column--middle">
+            <ul class="main-footer__links-list">
+              <li>
+                <a href="#">
+                  <img
+                    src="img/icons/qiwi-icon.svg"
+                    width="20"
+                    height="20"
+                    alt="Qiwi wallet"
+                  />
+                  <p>Qiwi wallet</p>
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <img
+                    src="img/icons/yandex-money-icon.svg"
+                    width="20"
+                    height="20"
+                    alt="Yandex Money"
+                  />
+                  <p>Yandex Money</p>
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <img
+                    src="img/icons/webmoney-icon.svg"
+                    width="20"
+                    height="20"
+                    alt="Web Money"
+                  />
+                  <p>Web Money</p>
+                </a>
+              </li>
+            </ul>
+          </div>
+          <div class="main-footer__column main-footer__column--right">
+            <ul class="main-footer__links-list">
+              <li>
+                <a href="#">
+                  <img
+                    src="img/icons/envelope-icon.svg"
+                    width="20"
+                    height="20"
+                    alt="email"
+                  />
+                  <p>info@ipsum228.com</p>
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <img
+                    src="img/icons/vkontakte-icon.svg"
+                    width="20"
+                    height="20"
+                    alt="Мы вконтакте"
+                  />
+                  <p>Мы вконтакте</p>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </footer>
     <script src="js/script.js"></script>
   </body>
 </html>
