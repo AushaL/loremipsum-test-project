@@ -92,7 +92,7 @@
           <form class="order__form" action="post">
             <div class="order__wrapper">
               <div class="order__form-line">
-                <select class="input" name="system-type">
+                <select class="input select" name="system-type">
                   <option value="type-0">Выберите тип системы</option>
                   <option value="type-1">Type 1</option>
                   <option value="type-2">Type 2</option>
@@ -114,27 +114,25 @@
               <div class="order__form-line">
                 <div class="order__range">
                   <div class="order__range-wrapper">
-                    <div class="order__range-columns">
-                      <label for="range-type"
-                        >Sed ut perspiciatis, unde omnis iste natus</label
-                      >
-                      <p class="order__range-output"><output></output>%</p>
-                    </div>
+                    <label for="range-type"
+                      >Sed ut perspiciatis, unde omnis iste natus</label
+                    >
+                    <p class="order__range-output"><output></output>%</p>
                   </div>
                   <input
+                    class="order__input-range"
                     type="range"
                     id="range-type"
                     name="range-type"
+                    value="75"
                     min="0"
                     max="100"
                   />
                 </div>
-                <label for="input-file">Прикрепить файл</label>
-                <input
-                  class="button order__file-button"
-                  type="file"
-                  id="input-file"
-                />
+                <label class="button order__file-label" for="input-file"
+                  >Прикрепить файл</label
+                >
+                <input class="order__file-button" type="file" id="input-file" />
               </div>
             </div>
             <button class="button" type="submit">Отправить</button>
@@ -146,29 +144,39 @@
           <h2 class="testimonials__title">Отзывы:</h2>
           <div class="swiper">
             <div class="swiper-wrapper">
-              <!-- Slides -->
               <div class="swiper-slide">
-                <img src="" alt="" />
-                <p></p>
+                <img src="img/pictures/review-1.jpg" alt="first person" />
+                <h3 class="testimonials__name">Person 1</h3>
+                <p class="testimonials__text">
+                  Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                  Eaque, dolor expedita impedit reiciendis, explicabo animi
+                  optio soluta repellat amet doloremque itaque ad reprehenderit
+                  eius incidunt voluptate, eos et molestias iste.
+                </p>
               </div>
               <div class="swiper-slide">
-                <img src="" alt="" />
-                <p></p>
+                <img src="img/pictures/review-2.jpg" alt="second person" />
+                <h3 class="testimonials__name">Person 2</h3>
+                <p class="testimonials__text">
+                  Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                  Eaque, dolor expedita impedit reiciendis, explicabo animi
+                  optio soluta repellat amet doloremque itaque ad reprehenderit
+                  eius incidunt voluptate, eos et molestias iste.
+                </p>
               </div>
               <div class="swiper-slide">
-                <img src="" alt="" />
-                <p></p>
+                <img src="img/pictures/review-3.jpg" alt="third person" />
+                <h3 class="testimonials__name">Person 3</h3>
+                <p class="testimonials__text">
+                  Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                  Eaque, dolor expedita impedit reiciendis, explicabo animi
+                  optio soluta repellat amet doloremque itaque ad reprehenderit
+                  eius incidunt voluptate, eos et molestias iste.
+                </p>
               </div>
             </div>
-            <!-- If we need pagination -->
-            <div class="swiper-pagination"></div>
-
-            <!-- If we need navigation buttons -->
             <div class="swiper-button-prev"></div>
             <div class="swiper-button-next"></div>
-
-            <!-- If we need scrollbar
-            <div class="swiper-scrollbar"></div> -->
           </div>
         </div>
       </section>
